@@ -9,8 +9,5 @@ google_sheets_table = conn.read()
 dataframe = pd.DataFrame(google_sheets_table) # Convert google sheets table into python dataframe. Streamlit expects dataframes as input.
 
 # Define tabs
-tab1 = st.tabs(["Table"])
+tab1 = st.tabs("Table")
 
-# Streamlit content
-with tab1:
-  st.write(dataframe)
