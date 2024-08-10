@@ -15,4 +15,4 @@ for index, row in dataframe.iterrows():
     st.write(row.drop('Image'))  # Display other data except for the Image URL
 
 # Alternatively, you can display the entire dataframe as well
-st.write(dataframe)
+st.write(dataframe.columns)
